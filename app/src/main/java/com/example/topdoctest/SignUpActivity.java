@@ -18,8 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private EditText inputUserName, inputEmail, inputPassword, inputConfirmPassword ;
-    Button signUpBttn;
+    private EditText inputEmail, inputPassword, inputConfirmPassword ;
 
     private FirebaseAuth firebaseAuth ;
     private ProgressDialog mLoadBar;
@@ -28,8 +27,8 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        inputUserName = findViewById(R.id.inputUserName);
-        inputEmail = findViewById(R.id.inputEmail);
+        //inputUserName = findViewById(R.id.inputUserName);
+        inputEmail = findViewById(R.id.inputEmail); //username
         inputPassword = findViewById(R.id.inputPassword);
         inputConfirmPassword = findViewById(R.id.inputConfirmPassword);
 
@@ -59,16 +58,16 @@ public class SignUpActivity extends AppCompatActivity {
 
     void checkCredentials() {
 
-        String username = inputUserName.getText().toString();
+        //String username = inputUserName.getText().toString();
         String emailID = inputEmail.getText().toString();
         String pwd = inputPassword.getText().toString();
         String cpwd = inputConfirmPassword.getText().toString();
 
-        if(username.isEmpty() || username.length() <=5)
+        /*if(username.isEmpty() || username.length() <=5)
         {
             showError(inputUserName,"Your username is not valid");
-        }
-        else if(emailID.isEmpty() || !emailID.contains("@"))
+        }*/
+        if(emailID.isEmpty() || !emailID.contains("@"))
         {
             showError(inputEmail,"Your username is not valid");
         }
@@ -95,9 +94,9 @@ public class SignUpActivity extends AppCompatActivity {
                     {
                         //get id of user and username and store
 
-                        Toast.makeText(SignUpActivity.this, "Registeration is Successfull", Toast.LENGTH_SHORT).show();
-
-                        Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                        Toast.makeText(SignUpActivity.this, "Registeration is Successful", Toast.LENGTH_SHORT).show();
+                        mLoadBar.dismiss();
+                        Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
                         intent.setFlags(intent.FLAG_ACTIVITY_CLEAR_TASK | intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }

@@ -81,7 +81,7 @@
                     android:textSize="@dimen/_11ssp"/>
 
                 <EditText
-                    android:id="@+id/inputUserName"
+                    android:id="@+id/inputEmailID"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_marginStart="@dimen/_8sdp"
