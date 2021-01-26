@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "328195768947",
+    "project_id": "topdoctest-a8b6c",
+    "storage_bucket": "topdoctest-a8b6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328195768947:android:539af91d0f6fa854daa006",
+        "android_client_info": {
+          "package_name": "com.example.topdoctest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328195768947-5iu7mor49cgamlorl66bqehnegb75u64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFOFM-YNxOom0ygG40BJAxRgtlTOvZ_lQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328195768947-5iu7mor49cgamlorl66bqehnegb75u64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
