@@ -27,6 +27,10 @@
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".ResetPasswordActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"/>
     </application>

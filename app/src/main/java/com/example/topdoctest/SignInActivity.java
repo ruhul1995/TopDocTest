@@ -52,7 +52,12 @@ public class SignInActivity extends SignUpActivity {
             @Override
             public void onClick(View v) {
                 checkCredential();
-               // insertDataToFirebase();
+            }
+        });
+        findViewById(R.id.buttonForgotPassword).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ResetPasswordActivity.class));
             }
         });
     }
@@ -120,7 +125,6 @@ public class SignInActivity extends SignUpActivity {
                         showError(inputEmail,"Your username does not exist in database");
                         Toast.makeText(SignInActivity.this, "Please sign up your account", Toast.LENGTH_LONG).show();
                         //Toast.makeText(SignInActivity.this, task.getException().toString(), Toast.LENGTH_LONG).show();
-
                     }
                 }
             });

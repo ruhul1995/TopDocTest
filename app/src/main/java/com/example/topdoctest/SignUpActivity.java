@@ -63,10 +63,6 @@ public class SignUpActivity extends AppCompatActivity {
         String pwd = inputPassword.getText().toString();
         String cpwd = inputConfirmPassword.getText().toString();
 
-        /*if(username.isEmpty() || username.length() <=5)
-        {
-            showError(inputUserName,"Your username is not valid");
-        }*/
         if(emailID.isEmpty() || !emailID.contains("@"))
         {
             showError(inputEmail,"Your username is not valid");
@@ -82,7 +78,7 @@ public class SignUpActivity extends AppCompatActivity {
         else
         {
             mLoadBar.setTitle("Registeration");
-            mLoadBar.setMessage("Please wait while checking your credential");
+            mLoadBar.setMessage("Please wait... Adding your credential to database");
             mLoadBar.setCanceledOnTouchOutside(false);
             mLoadBar.show();
 
